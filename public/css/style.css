@@ -1,0 +1,103 @@
+@font-face{
+    font-family: 'poppins';
+    src: url('../font/Poppins-Light.ttf');
+}
+@font-face{
+    font-family: 'poppins-medium';
+    src: url('../font/Poppins-Medium.ttf');
+}
+.jumbotron {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0;
+    background-image: url(../img/background.jpg);
+    height: 100%;
+    color: #FFFFFF;
+    font-family: 'poppins';
+    padding: 20px 0px;
+    min-height: 100vh;
+    margin: 0px;
+}
+/* icon */
+.icon{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.icon .background{
+    width: 25px;
+    height: 25px;
+    background-color: #50D890;
+    border-radius: 100%;
+}
+.icon h6{
+    font-family: 'poppins-medium';
+    margin: 0;
+    margin-left: -15px;
+}
+/* content 1 */
+.content-1{
+    flex-direction: column;
+}
+.content-1 .moto {
+    font-family: 'poppins-medium';
+}
+a.btn.btn-ramadhanku {
+    margin-top: 20px;
+    background: #50D890;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-family: 'poppins-medium';
+    width: 50%;
+}
+/* content-2 */
+.card.m-card-fitur {
+    background: #FFFFFF;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #50D890;
+    font-family: 'poppins-medium';
+    width: max-content;
+    text-align: center;
+    height: max-content;
+}
+.m-card-fitur .card-header {
+    border: none;
+    background: #FFFFFF;
+}
+.card.m-card-fitur .card-body{
+    width: 100%;
+}
+/* responsive */
+@media (max-width: 576px) { 
+    .content-2{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .content-2 .m-card-fitur {
+        min-width: 80%;
+        margin: auto!important;
+    }
+}
+@media (min-width: 768px) { 
+    .content-1{
+        min-height: 85vh;
+    }
+    .content-1 .moto{
+        font-size: 50px;
+    }
+}
+/* 
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */
